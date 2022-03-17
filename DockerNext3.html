@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="1.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h3>DOCKER FILE(CONTD)</h3>
+            
+            
+            <p>
+                1. A docker file is a recipe for creating docker images. <br>
+                2. A docker images get build by making a docker commands. <br>
+                3. A docker container is a running instance of docker images. <br>
+                
+                <h3>OPEN CONTAINER INITIATIVE (OCI)</h3>
+                <p>
+                    It is an Linux foundation project to design open standards for containers. <br>
+                    OCI currently contains two specifications that is <strong>Runtime Specification</strong> and <strong>Image Specification </strong> <br>
+                    1. <strong>RUNTIME SPECIFICATIONS</strong> - It defines how to run OCI Image bundle as container. <br>
+                    2. <strong>IMAGE SPECIFICATION </strong> - It defines how to create OCI Image. <br>
+                    
+                <h3>docker registeries</h3>
+                <p>
+                    1. This is where Docker images are stored. Docker Hub is a public registry that anyone can use.<br>
+                    2. This is where Docker images are stored. Docker Hub is a public registry that anyone can use.<br>
+                    <a href="DockerNext4.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="docker.html">Docker</a></li>
+            <li><a href="kubernetes.html">Kubernetes</a></li>
+            <li><a href="DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>

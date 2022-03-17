@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="1.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Introduction To Docker</h2>
+            
+            
+            <p>
+                Docker is a container program that allows you to build. test and deploy application and even enables developer to package applications into  container. <br>
+                <h3>ADVANTAGES OF USING DOCKER</h3>
+                <p>
+                1. Fast, consistent delivery of your applications <br>
+                2. Responsive deployment and scaling <br>
+                3. Running more workloads on the same hardware <br>
+                <h3>Why use Docker</h3>
+                <p>
+                    Using Docker can help you ship your code faster, gives you control over your applications.<br>
+                    <a href="DockerNext.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="docker.html">Docker</a></li>
+            <li><a href="kubernetes.html">Kubernetes</a></li>
+            <li><a href="DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>
