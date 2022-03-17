@@ -160,7 +160,7 @@ header .logo
   position: absolute;
   top: 0;
   right: 0;
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -191,19 +191,36 @@ header .logo
   color: #03a9f4; 
 }
 
+
+
+
 @media (max-width: 600px)
 {
   .showcase,
   .showcase header
   {
-    padding: 1px;
+    padding: 10px;
   }
+  .logo{
+    font-size: 1;
+    padding: 1px 10px;
+    
+  }
+  .social{
+    bottom: -15px;
+  }
+  .text img{
+    width: 350px;
+   }
+  
   .text h2
   {
-    font-size: 3em;
+    font-size: 2em;
+    padding: 50px 1px;
   }
   .text h3
   {
-    font-size: 2em;
+    font-size: 1.5em;
+    padding: 50px 1px;
   }
 }
