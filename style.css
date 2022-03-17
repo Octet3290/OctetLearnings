@@ -191,12 +191,12 @@ header .logo
   color: #03a9f4; 
 }
 
-@media (max-width: 901px)
+@media (max-width: 991px)
 {
   .showcase,
   .showcase header
   {
-    padding: -1px;
+    padding: 30px;
   }
   .text h2
   {
