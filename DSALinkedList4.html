@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,51 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octet's Learning</title>
 </head>
+
 <body>
     <section class="showcase">
         <header>
-            
+
             <h2 class="logo">Octet</h2>
-            <div class="toggle"></div>        
+            <div class="toggle"></div>
         </header>
 
-        <video src="1.mp4" muted loop autoplay></video>
+        <video src="4.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <div class="text">
-            <h3>DOCKER ENGINE</h3>
-            
-            
+            <h3>Detection of Cycle</h3>
+
+
             <p>
-                1. Client server technology that builds and run the container using Docker's container. <br>
-                2. It comprises of Docker Daemon, Rest API, and CLI (client) <br>
-                3. CLI Talks to Docker daemon through API <br>
-                <div class="image">
-                <img src="dockerengine.jpg" alt="">
-            </div>
+                It checks whether the given linked list is completing a cycle or not. <br>
+                - For this first we have to create a class of makeCycle, so that the DetectCycle can detect that their is cycle present in linked list.
+                <img src="DetectionOfCycle.png" alt="" width="500">
+            <h3>Removal of Cycle in Linked List</h3>
 
-                
-                <p>
-                
-               
-                <h3>DOCKER DAEMON</h3>
-                <p>
-                    It manages docker objects such as images, networks, container and volumes <br>
-                    <a href="DockerNext2.html">next</a>
-                    
-                    
-                </p>
+
+            <p>
+                It removes the cycle in Linked List. <br>
+                <img src="RemovalOfCycle.png" alt="" width="500">
+
+
+
+
+
+
+                <a href="DSALinkedList4.html">next</a>
+
+
             </p>
-            
             </p>
-            
-            
-            
-                
+
+            </p>
 
 
-            
+
+
+
+
+
         </div>
-        
+
         <ul class="social">
             <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
             <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
@@ -71,11 +74,12 @@
         const menuToggle = document.querySelector('.toggle')
         const showcase = document.querySelector('.showcase')
 
-        menuToggle.addEventListener('click',() =>{
+        menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active')
             showcase.classList.toggle('active')
-            
+
         })
     </script>
 </body>
+
 </html>
