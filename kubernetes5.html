@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="example.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h3>Control Plane</h3>
+            
+            
+            <p>
+                - It manages the whole cluster. <br>
+                - It manages the health check of the working nodes and shows information of member of cluster. <br>
+                - Communicates with working nodes to ensure that all the application is running properly. <br> <br>
+
+              
+
+
+                <h3>COMPONENTS OF CONTROL PLANE</h3> <br>
+                
+                <p>
+                1. <strong>etcd</strong> - It stores the current state of the cluster. <br> <br>
+                2. <strong>API server</strong> <br>
+                - CRUD operations for server go through API. <br>
+                - Kubectl takes command and forward to API server to perform the operation. <br> <br>
+                3. <strong>Scheduler</strong> <br>
+                - It schedules the pods accordingly.  <br>
+                - Basically scheduler looks for appropriate nodes that meets the user criteria and schedules the pod accordingly. <br> <br>
+                4. <strong>Controller Manager</strong> <br>
+                - It manages the controller. <br>
+                It basically have three functionality <br>
+                - Check current state <br>
+                - Check desired state <br>
+                - Check differences and make the changes  <br>
+
+                <h3>Working Nodes</h3>
+                
+                <p>
+                    It is a physical layer where deployment of containers takes place.  
+                    <br>
+                    <h3>COMPONENTS OF WORKING NODES</h3>
+                    <p>
+                        1. <strong>Kubelet</strong> <br>
+                        - Ensures that the containers described in pod spec is working and running healthy. <br>
+                        - Incase Kubelet notices any issue with the pods running on worker nodes, it tries to restart the pod at the same node. <br>
+                        - If the fault is the worker node itself, then it recreates the pods with healthy worker nodes. <br> <br>
+
+                        1. <strong>Kube-proxy</strong> <br>
+                        - It maintains the network configuration. <br>
+                        - provides  IP address to nodes. <br>
+                        - Maintains the distributed networks across nodes, pods and containers. <br>
+                    </p>
+                    
+                    
+                    
+                    
+                </p>
+                
+
+                </p>
+                <a href="kubernetes4.html">next</a>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="#"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="#"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="docker.html">Docker</a></li>
+            <li><a href="kubernetes.html">Kubernetes</a></li>
+            <li><a href="DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>
