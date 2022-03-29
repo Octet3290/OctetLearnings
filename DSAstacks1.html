@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,47 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Octet's Learning</title>
 </head>
+
 <body>
     <section class="showcase">
         <header>
-            
+
             <h2 class="logo">Octet</h2>
-            <div class="toggle"></div>        
+            <div class="toggle"></div>
         </header>
 
-        <video src="1.mp4" muted loop autoplay></video>
+        <video src="4.mp4" muted loop autoplay></video>
         <div class="overlay"></div>
         <div class="text">
-            <h3>Docker runtime</h3>
-            
-            
+            <h3>Reverse a sentence using stack </h3> 
+            <p><img src="ReverseSentence.png" alt="" width="500"></p>
+            <h3>Reverse stack</h3>
+            <p> <img src="ReverseStack.png" alt="" width="500"><br>
+
             <p>
-                It basically allows us to start and stop the container <br>
-                There are various types of Docker runtimes available but for now we will discuss here about <strong>runc</strong> and <strong>containerd</strong>
-                
-                <p>
-                1. <strong>runc</strong> - It is used by or you can say operated by containerd and is basically used to start and stop the container.<br>
-                2. <strong>containerd</strong> - It manages complete container life cycle. It even do image transfer/storage and container execution, supervision and stuffs.<br>
-               
-                <h3>DOCKER ARCHITECTURE</h3>
-                <p>
-                    1 .Docker uses a client-server architecture.<br> 2. The Docker client talks to the Docker daemon, which manages docker objects such as images, networks, container and volumes.<br>
-                    <a href="DockerNext1.html">next</a>
-                    
-                    
-                </p>
-            </p>
-            
-            </p>
-            
-            
-            
-                
+
+           
 
 
+
+
+
+
+                <a href="DSAstacks2.html">next</a>
+
+
+            </p>
+            </p>
+
             
+
+
+
+
+
+
+
         </div>
-        
+
         <ul class="social">
             <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
             <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
@@ -67,11 +69,12 @@
         const menuToggle = document.querySelector('.toggle')
         const showcase = document.querySelector('.showcase')
 
-        menuToggle.addEventListener('click',() =>{
+        menuToggle.addEventListener('click', () => {
             menuToggle.classList.toggle('active')
             showcase.classList.toggle('active')
-            
+
         })
     </script>
 </body>
+
 </html>
