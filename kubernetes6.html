@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="example.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h3>Managing Kubernetes Applications</h3>
+            <h1>Concepts of Managing Kubernetes Application</h1>
+            <p>
+                
+
+                 - ReplicaSet <br>
+                 - Autoscaling <br>
+                 - Rolling Updates <br>
+                 - Config Maps & Secrets <br>
+                 - Service Binding <br>
+
+              
+
+
+                <h3>ReplicaSet</h3> 
+                
+                <p>
+                1. Manages pods and checks whether pods are running or not <br>
+                2. It has ability of replicating pods, when the existing pods fails. <br>
+                3. Maintains desired state<br>
+              
+
+                <h1>How to create ReplicaSet ?</h1>
+                
+                <p>
+                    1. One is automatically created when you create a deployement. <br>
+                    2. Second, is you can create from scratch in YAML file with "kind" attribute set to "ReplicaSet". <br>
+                    And you can even define no. of ReplicaSet. Suppose we set to 1, so you will get the single pod.
+                    <br>
+                </p>
+
+                <h3>Autoscaling</h3>
+                <p>
+                    1. ReplicaSets provide a good start for scaling. <br>
+                    2. Horizontal pod Autoscaler (HDA) enables scaling up and down as needed. <br>
+                    3. Can configure based on Desired state of CPU, memory etc. <br>
+                </p>
+                <h1>How to Create Autoscale ?</h1> 
+                <p>You can Autoscale a Deployement by using "autoscale" command with the same attribute in order to autoscale.</p>
+                
+
+
+                </p>
+                <a href="kubernetes7.html">next</a>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="docker.html">Docker</a></li>
+            <li><a href="kubernetes.html">Kubernetes</a></li>
+            <li><a href="DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>

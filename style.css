@@ -87,6 +87,10 @@ header .logo
   position: relative;
   z-index: 10;
 }
+.text h1{
+  color: #fff;
+  text-transform: uppercase;
+}
 
 .text h2
 {
