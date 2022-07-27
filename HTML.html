@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="7.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>HTML</h2>
+            
+            
+            <p>
+                1. It stands for  Hypertext Markup Language <br>
+                2. Markup Language is a language that is human readable and does not contain programming syntax. <br>
+                <h3>HTML TAGS</h3>
+                <p>
+                1. <strong>Heading HTML Tag</strong> -  &lth1&gt &lth2&gt &lth3&gt &lth4&gt &lth5&gt &lth6&gt are the heading tags where h1 is the biggest one while h6 is the smallest. <br>
+                2. <strong>&ltp&gt tag</strong> - This is known as paragraph tag. <br>
+                3. <strong>break &ltbr/&gt tag </strong> - Line break or create line. <br>
+                4. <strong>Horizontal rule  &lthr/&gt tag</strong> - Creates a horizontal line. <br>
+                5. <strong>Link/anchor tags  &lta&gt </strong> - Contains link (target = "_blank") => opens in new tab. <br>
+                6. <strong>Division &ltdiv&gt tag</strong> - Creates Division. <br>
+                7. <strong>span  &ltspan&gt tag</strong> - use to style the content of webpage. <br>
+                8. <strong>&ltb&gt and &ltstrong&gt tag</strong> -Makes text bold. <br>
+                9. <strong>&lti&gt and &ltem&gt tag</strong> - Makes text italian. <br>
+                10. <strong>&ltu&gt tag</strong> -  use to underline text. <br>
+                10. <strong>&ltimg&gt tag</strong> - adds image. <br>
+
+
+                <h3>LISTS IN HTML </h3>
+               
+                <p>
+                    Lists in HTML are of two types :- <br>
+                    1. Ordered Lists &ltol&gt <br>
+                    2. Unordered Lists &ltul&gt
+                </p>
+               
+                <p>
+                    <strong>ORDERED LISTS</strong> <br> <br>
+                    Makes the list in particular order<br>
+                    <strong>TYPES OF ORDERED LISTS</strong> <br> 
+                    1. &ltol type = "A" &gt <br>
+                    <img src="ol A.png" width ="250" alt="">
+                    <br>
+                    2. &ltol type = "1" &gt <br>
+                    <img src="ol 1.png" width ="250" alt="">
+                    <br>
+                    3. &ltol type = "I" &gt <br>
+                    <img src="ol I.png" width ="250" alt="">
+                    <br>
+                    4. &ltol type = "a" &gt <br>
+                    <img src="ol small a.png" width ="250" alt="">
+                    <br>
+                    5. &ltol type = "A" &gt <br>
+                    <img src="ol A.png" width ="250" alt="">
+                    <br>
+                    6. &ltol type = "i" &gt <br>
+                    <img src="ol small i.png" width ="250" alt="">
+                    <br> <br> <br>
+
+                    <strong>UNORDERED LIST</strong> <br> <br>
+                    Makes the list in unsequential manner<br>
+                    <strong>TYPES OF UNORDERED LISTS</strong> <br> 
+                    1. &ltul type = "disc" &gt <br>
+                    <img src="ul disc.png" width ="250" alt="">
+                    <br>
+                    2. &ltul type = "square" &gt <br>
+                    <img src="ul square.png" width ="250" alt="">
+                    <br>
+                    3. &ltul type = "circle" &gt <br>
+                    <img src="ul circle .png" width ="250" alt="">
+                    <br>
+                    4. &ltul type = "none" &gt <br>
+                    <img src="ul none.png" width ="250" alt="">
+                    <br>
+                
+                    <br> 
+                    <a href="HTML1.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="docker.html">Docker</a></li>
+            <li><a href="kubernetes.html">Kubernetes</a></li>
+            <li><a href="DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="WD.html">Web Development</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>
