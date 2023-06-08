@@ -21,4 +21,4 @@ jobs:
         aws-region: us-east-1
 
     - name: Deploy static site to S3 bucket
-      run: aws s3 sync . s3://OctetLearnings --delete
+      run: aws s3 sync . s3://octets-learning --delete
