@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="../Background videos/8.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Deploying website on AWS using GitHub Actions</h2>
+            
+            
+            <p>
+                
+                <h1>what is aws?</h1>
+                <p>
+                    AWS stands for Amazon Web Services. It is a comprehensive cloud computing platform provided by Amazon. AWS offers a wide range of services and tools designed to help businesses and individuals build and manage their applications, infrastructure, and data in the cloud.
+
+                    
+                <h1>Why use github actions?</h1>
+                <p>
+                    GitHub Actions is an automation platform provided by GitHub, a web-based hosting service for version control using Git. It enables developers to automate various workflows, tasks, and processes within their software development projects.
+
+                    With GitHub Actions, developers can define custom workflows using YAML files that specify a series of steps to be executed when certain events occur. These events can include actions like pushing code to a repository, creating a pull request, or publishing a release. Each step in the workflow is executed within a specific environment, such as a virtual machine or container.<br><br>
+                    <a href="DevopsNext1.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Docker/docker.html">Docker</a></li>
+            <li><a href="../Kubernetes/kubernetes.html">Kubernetes</a></li>
+            <li><a href="../DSA/DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="../Web Development/WD.html">Web Development</a></li>
+            <li><a href="../DevOps/devops.html">Devops</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>

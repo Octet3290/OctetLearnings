@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="../Background videos/8.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>procedure for implementation</h2>
+            
+            
+            <p>
+                
+                <h1>1. create bucket on aws s3 with default settings</h1>
+                <p> 
+                    ** Make sure to uncheck "Block public access" while creating bucket** <br>
+                    <div class="image">
+                        <img src="../Images/Devops/s3dashboard.jpeg" alt="" width="900">
+                    </div>
+
+                    
+                <h1>2. Now go to GitHub Actions -> "go to setup a workflow yourself" </h1>
+                <p>
+                    <div class="image">
+                        <img src="../Images/Devops/githubactionWorkflow.jpeg" alt="" width="900">
+                    </div>
+                    <br><br>
+                    
+                    
+                    
+                </p>
+                <h1>3. Now write the below code in main.yaml" </h1>
+                <p>
+                    It will help in copying codebase to AWS S3 objects<br>
+                    <div class="image">
+                        <img src="../Images/Devops/mainyamlcode.jpeg" alt="" width="900">
+                    </div>
+                    
+                    <br><br>
+                    
+              
+                    
+                    
+                </p>
+                <h1>4. you can get secrets.AWS_ACCESS_KEY_ID and secrets.AWS_SECRET_ACCESS_KEY_ID THROUGH AWS IAM</h1>
+                <p>
+                    - Go to AWS IAM -> users -> create access key -> <strong>command line interface</strong> ->     click on create access key<br>
+                     - Therefore you will get your access key as well as secret access key.
+                    <div class="image">
+                        <img src="../Images/Devops/iamdashboard.jpeg" alt="" width="900">
+                    </div>
+                    
+                    <br><br>
+                    
+                   
+                    
+                    
+                </p>
+                <h1>5. Go to settings of your github repository -> secrets and variables</h1>
+                <p>
+                    - Add your access key and secret access key.<br>
+                    - Then click on commit changes in <strong>main.yaml</strong> file
+                     
+                    <div class="image">
+                        <img src="../Images/Devops/secretaccess.jpeg" alt="" width="600">
+                    </div>
+                    <div class="image">
+                        <img src="../Images/Devops/accesskey.jpeg" alt="" width="600">
+                          
+                    </div>
+                    
+                    <br><br>
+                    
+                    <a href="DevopsNext3.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Docker/docker.html">Docker</a></li>
+            <li><a href="../Kubernetes/kubernetes.html">Kubernetes</a></li>
+            <li><a href="../DSA/DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="../Web Development/WD.html">Web Development</a></li>
+            <li><a href="../DevOps/devops.html">Devops</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>

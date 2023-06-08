@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="../Background videos/8.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+           
+            
+            
+            <p>
+                
+                <h1>6. Check if all the jobs have been executed successfully or not</h1>
+                <p> 
+                    ** Make sure to uncheck "Block public access" while creating bucket** <br>
+                    <div class="image">
+                        <img src="../Images/Devops/mainyamlcommit.jpeg" alt="" width="900">
+                    </div>
+
+                    
+                <h1>7. Now you can see on your s3 dashboard objects that your codebase has been pushed successfully </h1>
+                <p>
+                    <div class="image">
+                        <img src="../Images/Devops/s3objects.jpeg" alt="" width="900">
+                    </div>
+                    <br><br>
+                    
+                    
+                    
+                </p>
+                <h1>8. now you have to write bucket policy code to make it publicly accessible </h1>
+                <p>
+                    
+                    <div class="image">
+                        <img src="../Images/Devops/bucketpolicy.jpeg" alt="" width="900">
+                    </div>
+                    
+                    <br><br>
+                    
+              
+                    
+                    
+                </p>
+                <h1>9. now you have to just enable static website hosting under AWS s3 properties</h1>
+                <p>
+                    - You will get the link for your website<br>
+                     
+                    <div class="image">
+                        <img src="../Images/Devops/hosting.jpeg" alt="" width="900">
+                    </div>
+                    
+                    <br><br>
+                    
+                   
+                    
+                    
+                </p>
+                <h1>10. Click on the provided aws link and congratulations you have just deployed your website on aws using github actions.</h1>
+                <p>
+                    
+                    
+                    <br><br>
+                    
+                    <a href="DevopsNext3.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Docker/docker.html">Docker</a></li>
+            <li><a href="../Kubernetes/kubernetes.html">Kubernetes</a></li>
+            <li><a href="../DSA/DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="../Web Development/WD.html">Web Development</a></li>
+            <li><a href="../DevOps/devops.html">Devops</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>

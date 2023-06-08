@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="../Background videos/8.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Introduction To Devops</h2>
+            
+            
+            <p>
+                DevOps, short for Development and Operations, is a set of practices and cultural philosophies that combines software development (Dev) and IT operations (Ops) to improve collaboration, communication, and efficiency within an organization. It aims to bridge the gap between development teams, responsible for building and updating software applications, and operations teams, responsible for managing and maintaining the infrastructure and systems that support those applications.
+
+                Traditionally, development and operations teams worked in separate silos, leading to inefficiencies, delays, and communication barriers. DevOps breaks down these barriers by promoting close collaboration and integration between the two teams throughout the entire software development lifecycle.. <br>
+                <h3>ADVANTAGES OF DEVOPS</h3>
+                <p>
+                    1. <strong>Integration and Continuous Delivery (CI/CD):</strong>  The practice of automating the build, testing, and deployment processes to ensure frequent and reliable releases of software.<br><br>
+
+                    2. <strong>Infrastructure as Code (IaC):</strong> Managing infrastructure and configuration through code, allowing for version control, automation, and reproducibility.<br><br>
+                    
+                    3. <strong>Automation:</strong> Utilizing tools and technologies to automate repetitive tasks, such as testing, provisioning, and deployment, reducing manual errors and improving efficiency.<br><br>
+                    
+                    4. <strong>Collaboration and Communication:</strong> Encouraging cross-functional teams to work closely together, share knowledge, and communicate effectively to align goals and objectives.<br><br>
+                    
+                    5. <strong>Monitoring and Feedback Loops:</strong> Implementing systems for real-time monitoring and feedback to identify issues, track performance, and continuously improve the software and infrastructure.<br><br>
+                    
+                    6. <strong>Agile and Lean Practices:</strong> Adopting iterative development methodologies and lean principles to promote flexibility, adaptability, and continuous improvement.<br><br>
+                <h3>Why use Devops</h3>
+                <p>
+                    DevOps practices enable organizations to deliver software more rapidly, reliably, and frequently, while ensuring stability, scalability, and quality. It fosters a culture of collaboration, innovation, and shared responsibility, ultimately improving the overall efficiency and effectiveness of software development and operations<br><br>
+                    <a href="DevopsNext.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Docker/docker.html">Docker</a></li>
+            <li><a href="../Kubernetes/kubernetes.html">Kubernetes</a></li>
+            <li><a href="../DSA/DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="../Web Development/WD.html">Web Development</a></li>
+            <li><a href="../DevOps/devops.html">Devops</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>

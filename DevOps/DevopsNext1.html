@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Octet's Learning</title>
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            
+            <h2 class="logo">Octet</h2>
+            <div class="toggle"></div>        
+        </header>
+
+        <video src="../Background videos/8.mp4" muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            
+            
+            
+            <p>
+                
+                <h1>components of aws we will be using in this project are: </h1>
+                <p>
+                    1. <strong>Amazon Simple Storage Service or AWS S3</strong> <br>
+                    2. <strong>AWS Identity and Access Management (IAM)</strong> <br>
+                    3. <strong>GitHub Actions</strong>
+
+                    
+                <h1>What is AWS S3?</h1>
+                <p>
+                    Amazon Simple Storage Service (Amazon S3) is an object storage service that offers industry-leading scalability, data availability, security, and performance. Customers of all sizes and industries can use Amazon S3 to store and protect any amount of data for a range of use cases, such as data lakes, websites, mobile applications, backup and restore, archive, enterprise applications, IoT devices, and big data analytics. Amazon S3 provides management features so that you can optimize, organize, and configure access to your data to meet your specific business, organizational, and compliance requirements.<br>
+                    
+                    
+                </p>
+                <h1>What is AWS IAM?</h1>
+                <p>
+                    AWS IAM (Identity and Access Management) is a service provided by Amazon Web Services (AWS) that allows you to manage access to AWS resources securely. It helps you control who can access your AWS services, what resources they can access, and what actions they can perform.IAM enables you to create and manage users, groups, and roles, and assign specific permissions to them. <br>AWS IAM allows you to follow the principle of least privilege, granting users and applications only the permissions they need to perform their tasks. It helps enforce security best practices, ensures accountability, and provides centralized control over access management in your AWS environment.<br><br>
+                    <a href="DevopsNext2.html">next</a>
+                    
+                    
+                </p>
+            </p>
+            
+            </p>
+            
+            
+            
+                
+
+
+            
+        </div>
+        
+        <ul class="social">
+            <li><a href="https://www.facebook.com/profile.php?id=100066943163682"><img src="https://i.ibb.co/x7P24fL/facebook.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://www.instagram.com/octet_rahul3290/"><img src="https://i.ibb.co/ySwtH4B/instagram.png" width="50" height="50" alt=""></a></li>
+            <li><a href="https://twitter.com/rahul3290"><img src="https://i.ibb.co/Wnxq2Nq/twitter.png" width="50" height="50" alt=""></a></li>
+        </ul>
+    </section>
+    <div class="menu">
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../Docker/docker.html">Docker</a></li>
+            <li><a href="../Kubernetes/kubernetes.html">Kubernetes</a></li>
+            <li><a href="../DSA/DSA.html">Data structures and Algorithm</a></li>
+            <li><a href="../Web Development/WD.html">Web Development</a></li>
+            <li><a href="../DevOps/devops.html">Devops</a></li>
+            <li><a href="../contact.html">Contact us</a></li>
+        </ul>
+    </div>
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+            
+        })
+    </script>
+</body>
+</html>
